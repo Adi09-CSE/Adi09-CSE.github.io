@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abu Taher | Portfolio</title>
+  <meta name="description" content="Portfolio of Abu Taher, CSE student at University of Creative Technology Chittagong. Interests: AI/ML, Research, Data Science." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+      <div class="container nav-inner">
+      <div class="brand" id="brand">Abu Taher</div>
+      <nav>
+        <a href="#home" class="nav-link home-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link btn-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- toast notification element -->
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="tech-bg">
+        <!-- subtle tech SVGs in background -->
+        <svg class="tech-icon icon1" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#2b6fa6"/><text x="32" y="40" text-anchor="middle" font-size="28" fill="#fff" font-family="Arial">{ }</text></svg>
+        <svg class="tech-icon icon2" viewBox="0 0 64 64"><rect x="8" y="8" width="48" height="48" rx="12" fill="#3b8fb8"/><text x="32" y="42" text-anchor="middle" font-size="26" fill="#fff" font-family="Arial">&lt;/&gt;</text></svg>
+        <svg class="tech-icon icon3" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#1f89c9"/><text x="32" y="40" text-anchor="middle" font-size="24" fill="#fff" font-family="Arial">AI</text></svg>
+      </div>
+      <div class="container grid-2">
+        <div class="hero-text">
+          <h1 class="fade-up"><span class="accent" id="name-type"></span><span class="type-cursor" id="name-cursor">|</span></h1>
+          <p class="subtitle fade-up delay-1"><span id="profession-type"></span><span class="type-cursor" id="profession-cursor">|</span></p>
+          <p class="subtitle fade-up delay-2"><span id="university-type"></span><span class="type-cursor" id="university-cursor">|</span></p>
+          <p class="fade-up delay-3"><span id="typewriter"></span><span class="type-cursor" id="tagline-cursor">|</span></p>
+          <div class="actions fade-up delay-4">
+            <a href="#experience" class="btn">View Experience</a>
+            <a href="#contact" class="btn ghost">Hire / Contact</a>
+          </div>
+        </div>
+        <div class="hero-photo fade-in">
+          <img src="img/Abu Taher.png" alt="Portrait of Abu Taher - CSE Student & AI/ML Enthusiast" width="340" height="340" loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <p class="section-text">
+          I am Abu Taher, a final-year B.Sc. student in Computer Science & Engineering at the University of Creative Technology Chittagong. I focus on applied data science and AI/ML research, building end-to-end solutions that combine robust data pipelines, reproducible experiments, and clear stakeholder communication. As President of the UCTC Computer Club, I lead workshops, mentor teams, and manage projects that bridge academic research and practical applications. My technical strengths include Python, pandas, scikit-learn, basic TensorFlow, Django for web services, and experience with embedded IoT integrations. I am actively seeking research collaborations, internships, and junior roles in Data Science, AI/ML, and software engineering.
+        </p>
+        <div class="links">
+          <a class="link" href="mailto:abrassadi643309@gmail.com" aria-label="Email Abu" style="margin-right: 12px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24" style="vertical-align:middle;"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 20v-9.99l7.99 7.99c.39.39 1.02.39 1.41 0L20 10.01V20H4z"/></svg>
+          </a>
+          <a class="link" href="https://www.linkedin.com/in/abu-taher-adi-" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24" style="vertical-align:middle;"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="card">
+          <h3>University of Creative Technology Chittagong</h3>
+          <p>B.Sc. in Computer Science & Engineering — Final year</p>
+          <ul class="flat-list">
+            <li>Core: Data Structures, Algorithms, Database Management, Operating Systems</li>
+            <li>AI/ML: Machine Learning, Data Analysis, Statistical Methods, Model Evaluation</li>
+            <li>Web Development: Python with Django </li>
+            <li>Programming Languages: Python, Java, C++, C</li>
+            <li>Projects: IoT implementations, Data analysis, Web applications</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="tech-bg projects-bg">
+        <svg class="ml-icon icon1" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#00bcd4"/><text x="32" y="40" text-anchor="middle" font-size="28" fill="#fff" font-family="Arial">🤖</text></svg>
+        <svg class="ml-icon icon2" viewBox="0 0 64 64"><rect x="8" y="8" width="48" height="48" rx="12" fill="#ffd600"/><text x="32" y="42" text-anchor="middle" font-size="28" fill="#333" font-family="Arial">ML</text></svg>
+      </div>
+      <div class="container">
+        <h2 class="section-title">Project Work</h2>
+
+        <div class="projects">
+          <article class="card hover-raise">
+            <h3>Student Performance Predictor</h3>
+            <p>Built a classification pipeline using scikit‑learn to predict outcomes from academic and behavioral features; emphasized feature scaling, cross‑validation, and ROC‑AUC tracking.</p>
+            <ul class="flat-list">
+              <li>Python, pandas, scikit‑learn, matplotlib</li>
+              <li>Metrics: accuracy, precision/recall, ROC‑AUC</li>
+            </ul>
+            <div class="tags">
+              <span>ML</span><span>Data Science</span><span>Research</span>
+            </div>
+          </article>
+
+          <article class="card hover-raise">
+            <h3>Diabetes Prediction Analysis </h3>
+            <p>Working with a substantial healthcare dataset containing 100K+ patient records across critical health indicators</p>
+            <ul class="flat-list">
+              <li>Python, scikit‑learn, NLP basics</li>
+              <li>Confusion matrix, per‑class F1</li>
+            </ul>
+            <div class="tags">
+              <span>NLP</span><span>SVM</span><span>Evaluation</span>
+            </div>
+          </article>
+
+          <article class="card hover-raise">
+            <h3>EDA on Public Dataset</h3>
+            <p>Performed exploratory data analysis on an open dataset; communicated insights with plots and clear narrative for non‑technical audience.</p>
+            <ul class="flat-list">
+              <li>pandas, seaborn</li>
+              <li>Reproducible notebook</li>
+            </ul>
+            <div class="tags">
+              <span>EDA</span><span>Visualization</span><span>Storytelling</span>
+            </div>
+          </article>
+
+          <article class="card hover-raise">
+            <h3>IoT Device Integration</h3>
+            <p>Developed IoT solutions using microcontrollers and sensors for data collection and monitoring. Implemented wireless communication protocols for real-time data transmission.</p>
+            <ul class="flat-list">
+              <li>Arduino, Sensor integration</li>
+              <li>WiFi/Bluetooth communication protocols</li>
+            </ul>
+            <div class="tags">
+              <span>IoT</span><span>Hardware</span><span>Embedded Systems</span>
+            </div>
+          </article>
+
+          <article class="card hover-raise">
+            <h3>Web Development with Django</h3>
+            <p>Created dynamic web applications using Django framework with user authentication, database management, and responsive design principles.</p>
+            <ul class="flat-list">
+              <li>Python Django, HTML, CSS, JavaScript</li>
+              <li>Database design, User authentication</li>
+            </ul>
+            <div class="tags">
+              <span>Web Development</span><span>Django</span><span>Full Stack</span>
+            </div>
+          </article>
+
+          <article class="card hover-raise">
+            <h3>Data Visualization Dashboard</h3>
+            <p>Built interactive data visualization dashboard using Python libraries to present complex datasets in an intuitive and user-friendly manner.</p>
+            <ul class="flat-list">
+              <li>Python, matplotlib, seaborn, plotly</li>
+              <li>Interactive charts and graphs</li>
+            </ul>
+            <div class="tags">
+              <span>Data Viz</span><span>Python</span><span>Dashboard</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="projects">
+          <article class="card hover-raise">
+            <h3>President - UCTC Computer Club</h3>
+            <p>Currently leading the computer club initiatives, organizing tech events, workshops, and fostering a collaborative learning environment for 200+ members. Implementing strategic vision for technology education and innovation.</p>
+            <ul class="flat-list">
+              <li>Duration: July 2025 - Present (3 months)</li>
+              <li>Leading team of executive members</li>
+              <li>Organizing technical workshops and seminars</li>
+            </ul>
+            <div class="tags">
+              <span>Leadership</span><span>Event Management</span><span>Team Building</span>
+            </div>
+          </article>
+
+          <article class="card hover-raise">
+            <h3>Secretary General - UCTC Computer Club</h3>
+            <p>Managed administrative operations, coordinated between different departments, and maintained official documentation. Successfully transitioned club activities and member engagement programs.</p>
+            <ul class="flat-list">
+              <li>Duration: July 2024 - June 2025 (1 year)</li>
+              <li>Administrative management and coordination</li>
+              <li>Member engagement and retention strategies</li>
+            </ul>
+            <div class="tags">
+              <span>Administration</span><span>Coordination</span><span>Management</span>
+            </div>
+          </article>
+
+          <article class="card hover-raise">
+            <h3>Treasurer - UCTC Computer Club</h3>
+            <p>Managed financial operations, budget planning, and resource allocation for club activities. Maintained transparent financial records and optimized resource utilization.</p>
+            <ul class="flat-list">
+              <li>Duration: July 2023 - June 2024 (1 year)</li>
+              <li>Financial management and budget planning</li>
+              <li>Resource allocation and cost optimization</li>
+            </ul>
+            <div class="tags">
+              <span>Financial Management</span><span>Budget Planning</span><span>Analytics</span>
+            </div>
+          </article>
+
+          <article class="card hover-raise">
+            <h3>Inbound Customer Service Representative</h3>
+            <p>Provided technical support and customer service at Genex Infosys Limited. Developed strong interpersonal skills and customer relationship management expertise while handling complex technical queries.</p>
+            <ul class="flat-list">
+              <li>Duration: June 2021 - September 2022 (1 year 4 months)</li>
+              <li>Customer relationship management (CRM)</li>
+              <li>Technical support and problem solving</li>
+            </ul>
+            <div class="tags">
+              <span>Customer Service</span><span>CRM</span><span>Technical Support</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <form id="contactForm" class="form">
+          <div class="row">
+            <label>
+              Name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+          </div>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="btn">Send</button>
+          <p id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+        <p class="muted">Currently open to opportunities in Data Science, AI/ML Research, Software Development, and Teaching roles.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Abu Taher</p>
+      <div class="socials">
+        <a href="mailto:abrassadi643309@gmail.com" aria-label="Email" style="margin-right: 12px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24" style="vertical-align:middle;"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 20v-9.99l7.99 7.99c.39.39 1.02.39 1.41 0L20 10.01V20H4z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/abu-taher-adi-" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24" style="vertical-align:middle;"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // One-time typewriter for name, profession, university, then start cycling tagline
+    (function(){
+      const nameText = 'ABU TAHER';
+      const professionText = 'Student, Computer Science & Engineering';
+      const universityText = 'University of Creative Technology Chittagong — Final year';
+      const nameEl = document.getElementById('name-type');
+      const nameCursor = document.getElementById('name-cursor');
+      const profEl = document.getElementById('profession-type');
+      const profCursor = document.getElementById('profession-cursor');
+      const uniEl = document.getElementById('university-type');
+      const uniCursor = document.getElementById('university-cursor');
+      const tagEl = document.getElementById('typewriter');
+      const tagCursor = document.getElementById('tagline-cursor');
+
+      function typeOnce(text, el, cursor, speed){
+        return new Promise(resolve => {
+          let i = 0;
+          const tick = () => {
+            if(i <= text.length){ el.textContent = text.slice(0, i); i++; setTimeout(tick, speed); }
+            else { if(cursor) cursor.style.display = 'none'; resolve(); }
+          };
+          tick();
+        });
+      }
+
+      function startCyclingTagline(){
+        const phrases = ['Aspiring Data Scientist','AI & ML Research Enthusiast','Problem Solver','Team Leader'];
+        let idx = 0, ch = 0, deleting = false;
+        function frame(){
+          const p = phrases[idx];
+          if(!deleting){ ch++; tagEl.textContent = p.slice(0,ch); }
+          else { ch--; tagEl.textContent = p.slice(0,ch); }
+          if(!deleting && ch === p.length){ deleting = true; setTimeout(frame, 1200); }
+          else if(deleting && ch === 0){ deleting=false; idx=(idx+1)%phrases.length; setTimeout(frame,400); }
+          else setTimeout(frame, deleting?40:90);
+        }
+        frame();
+      }
+
+      // run sequence on DOM ready
+      document.addEventListener('DOMContentLoaded', function(){
+        // If user already has content (undone edits), only run if elements exist
+        if(nameEl && profEl && uniEl && tagEl){
+          typeOnce(nameText, nameEl, nameCursor, 80)
+            .then(()=> typeOnce(professionText, profEl, profCursor, 36))
+            .then(()=> typeOnce(universityText, uniEl, uniCursor, 28))
+            .then(()=> { if(tagCursor) tagCursor.style.display = 'inline'; startCyclingTagline(); });
+        }
+        // brand click -> show welcome toast
+        const brand = document.getElementById('brand');
+        const toast = document.getElementById('toast');
+        let toastTimeout = null;
+        let toastTypingInterval = null;
+        function showToast(text, typingSpeed = 30, displayTime = 2200){
+          if(!toast) return;
+          // clear prior timers
+          if(toastTimeout) { clearTimeout(toastTimeout); toastTimeout = null; }
+          if(toastTypingInterval) { clearInterval(toastTypingInterval); toastTypingInterval = null; }
+          // reset content and show
+          toast.classList.remove('show');
+          toast.textContent = '';
+          // slight delay to allow CSS transition reset
+          setTimeout(() => {
+            toast.classList.add('show');
+            let i = 0;
+            toastTypingInterval = setInterval(() => {
+              if(i < text.length){
+                toast.textContent += text.charAt(i);
+                i++;
+              } else {
+                clearInterval(toastTypingInterval);
+                toastTypingInterval = null;
+              }
+            }, typingSpeed);
+            // hide after typing completes + displayTime
+            const totalHide = text.length * typingSpeed + displayTime;
+            toastTimeout = setTimeout(() => {
+              toast.classList.remove('show');
+              if(toastTypingInterval){ clearInterval(toastTypingInterval); toastTypingInterval = null; }
+              toastTimeout = null;
+            }, totalHide);
+          }, 40);
+        }
+        if(brand){
+          brand.addEventListener('click', (e)=>{ e.preventDefault(); showToast("Welcome to Abu Taher's Portfolio!"); });
+          brand.style.cursor = 'pointer';
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
