@@ -47,7 +47,7 @@
           </div>
         </div>
         <div class="hero-photo fade-in">
-          <img src="Abu Taher.png" alt="Portrait of Abu Taher - CSE Student & AI/ML Enthusiast" width="340" height="340" loading="lazy" decoding="async" />
+          <img src="img/Abu Taher.png" alt="Portrait of Abu Taher - CSE Student & AI/ML Enthusiast" width="340" height="340" loading="lazy" decoding="async" />
         </div>
       </div>
     </section>
@@ -263,7 +263,13 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> Abu Taher</p>
+      <div class="footer-left">
+        <p>© <span id="year"></span> Abu Taher</p>
+        <p class="address-info">
+          East Nasirabad, Chittagong, Bangladesh<br>
+          <a href="mailto:abrassadi643309@gmail.com" class="footer-link">abrassadi643309@gmail.com</a>
+        </p>
+      </div>
       <div class="socials">
         <a href="mailto:abrassadi643309@gmail.com" aria-label="Email" style="margin-right: 12px;">
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24" style="vertical-align:middle;"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 20v-9.99l7.99 7.99c.39.39 1.02.39 1.41 0L20 10.01V20H4z"/></svg>
@@ -277,6 +283,9 @@
 
   <script src="script.js"></script>
   <script>
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
     // One-time typewriter for name, profession, university, then start cycling tagline
     (function(){
       const nameText = 'ABU TAHER';
@@ -369,4 +378,3 @@
   </script>
 </body>
 </html>
-
